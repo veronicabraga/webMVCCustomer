@@ -16,7 +16,7 @@ public class CustomerPresentationController extends HttpServlet {
 
         request.getSession().setAttribute("customer", customer);
 
-        RequestDispatcher customerDispatcher = getServletContext().getRequestDispatcher("customerPresentation.jsp");
+        RequestDispatcher customerDispatcher = getServletContext().getRequestDispatcher("/customerPresentation.jsp");
         try {
             customerDispatcher.forward(request, response);
         } catch (ServletException e) {
